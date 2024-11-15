@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Just Do It</title>
+    <link rel="stylesheet" href="shoes.css">
+    <link rel="stylesheet" href="shouseresponsive.css">
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="jquery-3.6.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="manu">
+            <div class="logo">
+                <div id="back"><i class="fa-solid fa-backward"></i></div>
+                <h1 class="fontf">Soan'<span class="fontf">s</span></h1>
+            </div>
+            <div class="options">
+                <ul id="list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#servises">Servises</a></li>
+                    <li><a href="#review">Review</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <div class="icons1" id="icons1" onclick="blockmenu()">
+                    <i class="fa-solid fa-heart" id="i_con"></i>
+                    <i class="fa-solid fa-cart-shopping carticon" id="i_con"></i>
+                   <a><i class="fa-solid fa-user" id="usericons"></i></a>
+                </div>
+                   <div class="open_close">
+                    <i class="fa-solid fa-bars" id="click_menu" onclick="menushow()"></i>
+                    <i class="fa-solid fa-x" id="x" onclick="menushow()"></i>    
+                </div>
+                </div>
+        </div>
+        <div class="heder" id="home">
+            <div class="heder_content">
+                <div class="cname">
+                    <h1>SOAN'S</h1>
+                    <h2 class="fontf">Collection</h2>
+                </div>
+                <div class="cdiscription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, veritatis
+                    ducimus deleniti voluptate ipsum minus tempora, modi eius rerum nihil optio iure dignissimos
+                    mollitia debitis ratione odio, expedita dolorem necessitatibus.Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Ipsam, veritatis
+                    ducimus deleniti voluptate ipsum minus tempora, modi eius rerum nihil optio iure dignissimos
+                    mollitia debitis ratione odio, expedita dolorem necessitatibus?</div>
+            </div>
+            <div class="heder_img"></div>
+        </div>
+        <div class="product" id="product">
+            <div class="bestproduct"><div class="product1">BEST PRODUCT</div>
+            <button class="btn1">SHOP NOW</button></div>
+            
+            <div class="pro_box">
+                <div class="box">
+                    <img src="shoes1.png" id="img1">
+                    <h2 id="name1">SOAN'S.special</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span id="price1">1990.98</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="cartbtn" onclick="addmycart('1')">Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="shoes8.png" id="img8">
+                    <h2 id="name8">SOAN'S</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span id="price8">299.98</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="cartbtn" onclick="addmycart('8')">Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="shoes7.png" id="img7">
+                    <h2 id="name7">SOAN'S</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span id="price7">299.98</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="cartbtn" onclick="addmycart('7')">Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="shoes6.png" id="img6">
+                    <h2 id="name6">SOAN'S</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span id="price6">299.98</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="cartbtn" onclick="addmycart('6')">Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="shoes5.png" id="img5">
+                    <h2 id="name5">SOAN'S</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span id="price5">299.98</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="cartbtn" onclick="addmycart('5')">Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="shoes4.png" id="img4">
+                    <h2 id="name4">SOAN'S</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span id="price4">299.98</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="cartbtn" onclick="addmycart('4')">Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="shoes3.png" id="img3">
+                    <h2 id="name3">SOAN'S</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span id="price3">199.98</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="cartbtn" onclick="addmycart('3')">Add To Cart</button>
+                </div>
+                <div class="box">
+                    <img src="shoes2.png" id="img2">
+                    <h2 id="name2">SOAN'S</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <span id="price2">299.98</span>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <button class="cartbtn" onclick="addmycart('2')">Add To Cart</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="distant"></div>
+        <div class="product1" id="about">ABOUT SOAN'S</div>
+        <div class="about">
+
+            <div class="allshous">
+                <img src="red_shoes1.png">
+                <img src="red_shoes2.png">
+                <img src="red_shoes3.png">
+                <img src="red_shoes4.png">
+            </div>
+            <div class="mainshous">
+                <img src="red_shoes1.png">
+            </div>
+            <div class="disc">
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical
+                    Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                    Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from
+                    a
+                    Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+                    undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
+                    Malorum"
+                    (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory
+                    of ethics,
+                    very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+                    comes
+                    from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+                    below
+                    for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero
+                    are also
+                    reproduced in their exact original form, accompanied by English versions from the 1914 translation
+                    by H. Rackham.
+                </p>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------>
+        <div class="cart1">Cart</div>
+        <div class="mycart">
+            <table>
+                <tr>
+                    <div class="cartmain">
+                        <div id="cartproimg"></div>
+                        <div id="cartprodesc"></div>
+                        <div id="cartproprice"></div>
+                        <div id="cartqua">
+
+
+                        </div>
+                    </div>
+                </tr>
+                
+            </table>
+            <div id="total">Total: $0.00</div>
+        </div>
+       
+        <script src="Shouse.js"></script>
+
+
+
+
+        <div class="review" id="review">
+            <h1 id="costumer_rev">CUSTOMER'S <div class="revie">REVIEW</div>
+            </h1>
+            <div class="cust_box">
+
+
+                <div class="c_box">
+                    <div class="c_image" style=" background-image: url('girl_dp1.jpg');"></div>
+                    <div class="c_name">
+                        <h3>Ranidi Lochana</h3>
+                        <span>
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum
+                        architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+                        ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+                <div class="c_box">
+                    <div class="c_image" style=" background-image: url('man_dp3.jpg');"></div>
+                    <div class="c_name">
+                        <h3>Ranidi Lochana</h3>
+                        <span>
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum
+                        architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+                        ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+                <div class="c_box">
+                    <div class="c_image" style=" background-image: url('man_dp2.jpg');"></div>
+                    <div class="c_name">
+                        <h3>Ranidi Lochana</h3>
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum
+                        architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+                        ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+                <div class="c_box">
+                    <div class="c_image" style=" background-image: url('man_dp1.jpg');"></div>
+                    <div class="c_name">
+                        <h3>Ranidi Lochana</h3>
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum
+                        architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+                        ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+                <div class="c_box">
+                    <div class="c_image" style=" background-image: url('gir_dp3.jpg');"></div>
+                    <div class="c_name">
+                        <h3>Ranidi Lochana</h3>
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum
+                        architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+                        ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+                <div class="c_box">
+                    <div class="c_image" style=" background-image: url('gir_dp2.jpg');"></div>
+                    <div class="c_name">
+                        <h3>Ranidi Lochana</h3>
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum
+                        architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit
+                        ipsa repellat numquam atque dolores!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="s_title" id="servises">
+            <h1>OUR<div class="revie">SERVICE</div>
+        </div>
+        <div class="service">
+            <div class="s_box">
+                <div class="s_img">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <h3>Fast Delivery</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit.</p>
+            </div>
+            <div class="s_box">
+                <div class="s_img">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <h3>24 x 7 Support</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit.</p>
+            </div>
+            <div class="s_box">
+                <div class="s_img">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+                <h3>10 Days Replacement</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login_img"></div>
+            <div class="login_form">
+                <h1>Welcome Back!</h1>
+                <p>User Name</p>
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="User Name">
+                <p>Password</p>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password"><br>
+                <span id="forgot_pass">Forget Password ?</span><br>
+                <button>Login</button>
+                <br>
+                <div class="img_logo">
+                    <img src="google.png">
+                    <img src="facebook.png">
+                    <img src="twitter.png">
+                </div>
+            </div>
+        </div>
+        <div class="creat">
+            <div class="me">
+                <h2>Create by</h2>
+                <h1>SANTOSH</h1>
+            </div>
+            <div class="photo"></div>
+            <p>Santosh Hadiya From Gujarat #1 University</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+@media (max-width: 600px) {
+    *{
+        transition: 1s;
+    }
+    .manu {
+        padding: 30px 0px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+    }
+#x{
+    display: none;
+}
+.icons1{
+    display: flex;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+}
+.open_close{
+    text-align: end;
+   display: block;
+   float:right;
+    width: 40px;
+    height:100%;
+ 
+}
+    #list {
+        display: block;
+         background: linear-gradient(rgb(1, 1, 213) ,rgba(175, 0, 157, 0.554));   /*  padding: 10px; */
+        color: white;
+        position: absolute;
+        top: 100%;
+        right: 0px;
+        z-index: 1;
+        text-align: center;
+        width: 50%;
+        height: 0px;
+        overflow: hidden;
+    
+    }
+    #click_menu{
+        display: block;
+    }
+    #list li a{
+   display: block;
+   font-size: 5vw;
+   color: white;
+
+    
+    }
+
+    #back {
+        text-align: center;
+        height: 100%;
+        width: 50px;
+
+    }
+
+  
+    #back i {
+        font-size: 20px;
+        margin-top: 8px;
+        display: none;
+    }
+
+    .manu .logo {
+        margin-left: -50px;
+    }
+
+    .logo h1 {
+        font-size: 12vw;
+    }
+
+    .icons{
+        font-size: 5vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       justify-content: space-between;
+    }
+    
+    #usericons , #i_con{
+        display: block;
+        font-size: 4.4vw;
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 50%;
+    }
+
+    .icons {
+        margin-right: 10px;
+    }
+  .heder{
+      display: block;
+    min-height: 100px;
+    margin-top: -190px;
+    padding: 0px 5px;
+    background-color: white;
+  }
+  .heder_content{
+    margin-left: 0px;
+    width: 100%;
+    height: 50%;
+  
+  }
+  .heder_content .cname{
+    text-align: center;
+  }
+  .heder_content h1{
+    font-size: 26vw;
+  }
+ 
+  .heder_img{
+    height: 50%;
+    width: 100%;
+    background-size: 87%;
+  }
+  .btn1{
+    height: 60px;
+    margin: auto;
+  }
+ .product1{
+    font-size: 15vw;
+ }
+  .product{
+    margin-left: 0px;
+    padding: 5px;
+  }
+  .bestproduct{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .about{
+    height: 100%;
+    display: block;
+   
+  }
+  .about .allshous{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+      }
+  
+  .allshous img{
+    height: 27vh;
+    width: 45vw;
+    margin: 1vw;
+  }
+  .mainshous{
+    width: 100%;
+    height: 46vh;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+  }
+  .disc{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .service{
+    flex-direction: column;
+    height: 100%;
+  }
+  .s_box{
+    width: 100%;
+  }
+.login{
+    margin: 0px;
+    padding: 5px;
+} 
+.login_form{
+    margin: 0px;
+    padding: 0px;
+}
+.login_form{
+    width: 100%;
+    margin-left: 5px;
+}
+  .login_img{
+    display: none;
+  }
+  .login_form i{
+    position: relative;
+    top: 0px;
+    left: 10px;
+  }
+  .creat{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 2px 0px solid black;
+  }
+  .photo{
+    
+    margin: auto;
+  }
+  #forgot_pass{
+   margin: auto; 
+    position: relative;
+    left: 200px;
+  }
+  #costumer_rev{
+    font-size: 12vw;
+
+  }
+.login_form button{
+    margin-left: 0px;
+}
+  .review{
+    margin: 10px 0px;
+    padding: 5px;
+  }
+  #cartproimg{
+    
+    width: 100%;
+    height: 100%;
+  }
+  .products{
+    justify-content: space-between;
+    padding: 0px;
+  }
+  .products img{
+    margin: 0px;
+  }
+  .products span{
+    margin: 5px;
+    padding: 0px;
+  }
+  .component{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    margin: 0px;
+  }
+  .products button{
+    text-align: center;
+    width: 40px;
+    height: 30px;
+  }
+  .mycart{
+    padding: 20px 0px;
+    width: 100%;
+    margin: 0px;
+  }
+  #total{
+    margin: 0px;
+  }
+}
